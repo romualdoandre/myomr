@@ -1,0 +1,8 @@
+x,y,width,height,num_cell,type,direction,tag
+772.0,408.0,25,25,10,num,vertical,0
+821.0,407.0,25,25,10,num,vertical,1
+873.0,408.0,25,25,10,num,vertical,2
+921.0,408.0,25,25,10,num,vertical,3
+971.0,408.0,25,25,10,num,vertical,4
+1020.0,407.0,25,25,10,num,vertical,5
+1094.0,433.0,25,25,9,num,vertical,6
