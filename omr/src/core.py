@@ -14,7 +14,7 @@ class Core:
     '''
     Módulo de processamento de imagens
     '''
-    def __init__(self,filenames=[],appfilename=None,datafilename=None):
+    def __init__(self,filenames=[],appfilename=None,datafilename=None,threshold=95):
         '''
         Construtor do módulo
         @param filenames : arquivos para processamento
@@ -29,7 +29,7 @@ class Core:
         self.reader=None #leitor de arquivo CSV
         self.appfile=None #arquivo de configuração
         self.datafile=None #arquivo de saída
-        self.threshold=95#valor de filtro para binarizar a imagem e deixar apenas as marcações
+        self.threshold=threshold#valor de filtro para binarizar a imagem e deixar apenas as marcações
         self.id='' #id da folha
         self.filenames=filenames
         self.croppedindex=0
@@ -70,7 +70,6 @@ class Core:
         @param filename : nome do arquivo contendo a imagem
         '''
         self.logger.info('Processando arquivo:'+filename)
-        print(filename)
         self.pre_process_image(filename, self.threshold)
         hist_size = 64 #tamanho do histograma
         range_0=[0,256] #variedade de valores analisados
