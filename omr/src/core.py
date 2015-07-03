@@ -22,8 +22,7 @@ class Core:
         @param datafilename: arquivo de saída
         @para mode: modo de gravação (sobrescrever ou adicionar)
         '''
-        LOG_FILENAME = 'arya.log'#arquivo de log
-        croppedindex=0
+        LOG_FILENAME = 'omr.log'#arquivo de log
         logging.basicConfig(filename=LOG_FILENAME,level=logging.DEBUG)
         self.logger=logging.getLogger(__name__)
         self.reader=None #leitor de arquivo CSV
@@ -72,10 +71,9 @@ class Core:
         self.logger.info('Processando arquivo:'+filename)
         self.pre_process_image(filename, self.threshold)
         hist_size = 64 #tamanho do histograma
-        range_0=[0,256] #variedade de valores analisados
-        ranges = [ range_0 ]
-        
-        gray = cv.LoadImage(filename,0)
+        ranges = [ 256 ] #variedade de valores analisados
+                
+        gray = cv2.imread(filename,0)
         if not gray:
             print( "Falha ao carregar %s" % filename)
             self.logger.error("Falha ao carregar %s" % filename)
@@ -93,7 +91,7 @@ class Core:
         #newname=self.id+'.'+extension
         nameandpath[-1]=self.id+nameandpath[-1]+'.'+extension
         destname='/'.join(nameandpath)
-        cv.SaveImage(filename,gray)
+        cv2.imwrite(filename,gray)
         if self.id!='':
             try:
                 os.rename(filename,destname)
@@ -119,13 +117,13 @@ class Core:
         ptx=x+width*i*hor+hor*space*inicio*i
         pty=y+height*i*vert+vert*space*inicio*i
         rect=(ptx,pty,width,height)
-        src_region= cv.GetSubRect( gray, rect)
-        cropped=cv.CreateImage((width,height),8,1)
-        cv.Copy(src_region,cropped)
-        pt1=(ptx,pty)
-        pt2=(pt1[0]+width,pt1[1]+height)
+        src_region=gray[pty:pty+height,ptx:ptx+width] # cv.GetSubRect( gray, rect)
+        #cropped=cv.CreateImage((width,height),8,1)
+        #cv.Copy(src_region,cropped)
+        #pt1=(ptx,pty)
+        #pt2=(pt1[0]+width,pt1[1]+height)
         #cv.Rectangle(gray,pt1,pt2,(0,0,0))
-        return cropped
+        return np.copy(src_region)
     
     def calc_hist(self,subimages,hists,hist_size,ranges):
         '''
@@ -136,12 +134,14 @@ class Core:
         @param ranges : faixas de valores dos histogramas
         '''
         #cria histogramas
-        hists.append( cv.CreateHist([hist_size], cv.CV_HIST_ARRAY, ranges, 1) );
+        #hists.append( cv.CreateHist([hist_size], cv.CV_HIST_ARRAY, ranges, 1) );
         #calcula histogramas
-        cv.CalcHist([subimages[-1]],hists[-1])
-        temp=cv.Get1D(hists[-1].bins,0)
-        temp2=cv.Get1D(hists[-1].bins,63)
-        return [temp[0],temp2[0]]
+        #cv.CalcHist([subimages[-1]],hists[-1])
+        hist=cv2.calcHist([subimages[-1]],[0],None,[hist_size],ranges)
+        hists.append(hist)
+        #temp=cv.Get1D(hists[-1].bins,0)
+        #temp2=cv.Get1D(hists[-1].bins,63)
+        return [hist[0],hist[-1]]
     
     def process_row(self,gray,row,hist_size,ranges,nameandpath,filename):
         '''
@@ -193,7 +193,7 @@ class Core:
         nullanswer=0    
         if duplicate>1:
             for cropped in subimages:
-                cv.SaveImage("log/"+nameandpath[-1]+"_"+str(self.croppedindex)+".jpg", cropped)
+                cv2.imwrite("log/"+nameandpath[-1]+"_"+str(self.croppedindex)+".jpg", cropped)
                 self.croppedindex+=1
             self.logger.warning('O arquivo %s possui marcacoes duplicadas no campo %s.duplicate: %s',filename,row['tag'],duplicate)
             nullanswer=1
@@ -226,14 +226,14 @@ class Core:
         @param threshold : limiar para filtragem da imagem
         '''
         self.logger.info('Pré-Processando arquivo:'+filename)
-        im = cv.LoadImage(filename ,0)
+        im = cv2.imread(filename ,0)
 
         if not im:
             print "Failed to load %s" % filename
             sys.exit(-1)
             
-        cv.Threshold(im,im,treshold,255,cv.CV_THRESH_BINARY)
-        cv.SaveImage(filename, im)
+        retval, im = cv2.threshold(im, threshold, 255, cv2.THRESH_BINARY)
+        cv2.imwrite(filename, im)
         
         
 
