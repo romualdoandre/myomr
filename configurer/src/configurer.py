@@ -34,7 +34,10 @@ class Configurer():
         self.root= Tix.Tk()#main windows
         self.imidvar=Tix.IntVar(self.root) #the field is part of the sheet identifier number
         self.root.title("Configurer 1.0")
-        self.root.iconbitmap('icon.ico')
+        try:
+            self.root.iconbitmap('icon.ico')
+	except TclError:
+            print 'No icon file found'
         self.root.bind_all("<Control-q>", lambda(event): self.root.quit())
         self.root.bind_all("<Control-a>", lambda(event): self.load_app())
         self.root.bind_all("<Control-i>", lambda(event): self.set_photo())
@@ -267,8 +270,8 @@ class Configurer():
         filetypes=[('CSV files', '.csv'), ('All files', '*')]
         appfilename=tkFileDialog.askopenfilename( filetypes=filetypes)
         if appfilename!=None and appfilename!='':
-            appfile=open(appfilename, 'rb')
-            self.root.title("Jon 1.0 - "+appfilename)
+            self.appfile=open(appfilename, 'rb')
+            self.root.title("Configurer 1.0 - "+appfilename)
             if self.canvas:
                 self.make_canvas()
             self.load_fields()
@@ -286,7 +289,7 @@ class Configurer():
         if not appfilename:
             return
         with open(appfilename, 'wb') as self.appfile:
-            self.root.title("Jon 1.0 - "+appfilename)
+            self.root.title("Configurer 1.0 - "+appfilename)
             fieldnames= ['x','y','width','height','num_cell','type','direction','tag','imid','space']
             writer=csv.DictWriter(self.appfile,fieldnames=fieldnames)
             writer.writerow({'x':'x','y':'y','width':'width','height':'height','num_cell':'num_cell','type':'type','direction':'direction','tag':'tag','imid':'imid','space':'space'})

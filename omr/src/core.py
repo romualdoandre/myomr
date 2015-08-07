@@ -2,11 +2,11 @@
 
 __author__="Romualdo Andre da Costa"
 __date__ ="$04/04/2011 10:26:25$"
-import os
+import os,sys
 import csv
 import logging
 import datetime
-import cv2.cv as cv
+#import cv2.cv as cv
 import cv2
 import numpy as np
 
@@ -71,10 +71,10 @@ class Core:
         self.logger.info('Processando arquivo:'+filename)
         self.pre_process_image(filename, self.threshold)
         hist_size = 64 #tamanho do histograma
-        ranges = [ 256 ] #variedade de valores analisados
+        ranges = [0, 256 ] #variedade de valores analisados
                 
         gray = cv2.imread(filename,0)
-        if not gray:
+        if gray == None:
             print( "Falha ao carregar %s" % filename)
             self.logger.error("Falha ao carregar %s" % filename)
             return False
@@ -219,7 +219,7 @@ class Core:
 
         self.datafile.write(answer)#escreve o resultado no arquivo
 
-    def pre_process_image(self,filename,treshold):
+    def pre_process_image(self,filename,threshold):
         '''
         pré-processamento da imagem para remover ruídos
         @param filename : caminho completo do arquivo da imagem
@@ -227,8 +227,7 @@ class Core:
         '''
         self.logger.info('Pré-Processando arquivo:'+filename)
         im = cv2.imread(filename ,0)
-
-        if not im:
+        if im == None:
             print "Failed to load %s" % filename
             sys.exit(-1)
             

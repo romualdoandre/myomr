@@ -26,8 +26,8 @@ class Omr:
         '''
         Starts the processing. Supported image formats: all supported by OpenCV and PIL
         '''
-        if self.inputfolder!=None and self.appfilepath!=None and self.datafilepath!=None and self.svmfile!=None:
-            self.core=Core(glob.glob(self.inputfolder+'/*.'+self.extension),self.appfilepath,self.datafilepath,self.svmfile,self.threshold)
+        if self.inputfolder!=None and self.appfilepath!=None and self.datafilepath!=None:
+            self.core=Core(glob.glob(self.inputfolder+'/*.'+self.extension),self.appfilepath,self.datafilepath,self.threshold)
             self.core.run()
         else:
             print("Por favor, forneça a pasta de entrada, o arquivo de aplicação e o arquivo de dados")
