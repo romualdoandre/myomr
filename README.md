@@ -29,7 +29,6 @@ Where *x1* and *y1* is the beginning of the rightest superior mark, *x2* and *y2
 After you might crop the image with the _/omr/src/cropped/crop.py_ script as follow:
 
 > python crop.py x1 y1 x2 y2 regex
-<<<<<<< HEAD
 
 Where *x1* and *y1* is the beginning of the rightest superior mark, *x2* and *y2* is the beginning of the rightest inferior mark and *regex* is a regular expression refering the image files. All the result files will have a *crop_* prefix.
 
@@ -44,14 +43,14 @@ Open the configurer tool (folder _/configurer/src/_) using the command line:
 
 Before you start creating a configuration file, now called *application*, it is necessary to define a background image to the canvas. This is necessary for the user to have idea how to define each field. The keyboard shortcut for the command to open the background image is *Ctrl + i* or from the *File* menu, *Open background Image*.
 
-##Creating a new configuration file
+##Creating a new application
 
-Quando uma nova aplicação é criada, todos os campos já configurados são apagados e permanece apenas a imagem de fundo. O atalho de teclado para o comando de nova aplicação é Ctrl+n ou no menu Arquivo, Nova Aplicação.
 When a new *application* is created, all fields already set are deleted and remains only the background image. The keyboard shortcut for the new application command is *Ctrl + n* or from the *File* menu, *New*.
 
-##Salvando nova aplicação
+##Save
 
-As aplicações são salvas no disco com a extensão de arquivo .csv (Comma Separated Values  - Valores separados por vírgula) compatível com o Arya. A aplicação conterá todos os campos configurados. O atalho de teclado para salvar uma aplicação é Ctrl+s ou no menu Arquivo, Salvar Aplicação.
+ O atalho de teclado para salvar uma aplicação é Ctrl+s ou no menu Arquivo, Salvar Aplicação.
+Applications are saved to disk with the extension .csv (Comma Separated Values) compatible with the OMR. The *application* contains all configured fields. The keyboard shortcut to save an application is *Ctrl + s* or from the *File* menu, *Save*.
 
 ##Abrindo aplicação salva em disco
 
@@ -72,11 +71,3 @@ Selecione o campo utilizando o botão central do mouse ou selecione o menu Campo
 ##Alterando campo
 
 Selecione o campo utilizando o clique com botão direito do mouse. A linha limítrofe do campo mudará para a cor azul, indicando que o campo foi selecionado. Altere as informações do campo da mesma forma que na operação de criação do campo. Caso deseje desistir do processo, basta clicar no botão Cancelar. Para salvar o campo, clique em Ok.
-=======
-
-Where *x1* and *y1* is the beginning of the rightest superior mark, *x2* and *y2* is the beginning of the rightest inferior mark and *regex* is a regular expression refering the image files. All the result files will have a *crop_* prefix.
-
-GUI configurer tool
------
-
->>>>>>> 24da86fe2b61465c3c8b6dc250b99584dfe88eda
