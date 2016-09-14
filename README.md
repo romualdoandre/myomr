@@ -49,25 +49,24 @@ When a new *application* is created, all fields already set are deleted and rema
 
 ##Save
 
- O atalho de teclado para salvar uma aplicação é Ctrl+s ou no menu Arquivo, Salvar Aplicação.
 Applications are saved to disk with the extension .csv (Comma Separated Values) compatible with the OMR. The *application* contains all configured fields. The keyboard shortcut to save an application is *Ctrl + s* or from the *File* menu, *Save*.
 
-##Abrindo aplicação salva em disco
+##Open
 
-As aplicações são salvas no disco com a extensão de arquivo .csv (Comma Separated Values  - Valores separados por vírgula). Quando da abertura do arquivo de aplicação, os campos configurados são mostrados na tela na ordem como foram criados. Uma aplicação só pode ser aberta se houver uma imagem de fundo configurada. Se houver algum campo configurado anteriormente, ele será apagado e somente os campos do arquivo de aplicação aparecerão. O atalho de teclado para o comando de abrir aplicação é Ctrl+a ou no menu Arquivo, Abrir Aplicação.
+*Applications* are saved to disk with the extension .csv (Comma Separated Values - Comma Separated Values). When opening the *application* file, the fields configured are shown on the screen in the order they were created. An application can only be opened if there is a *background image* set. If there are any previously configured field, it will be deleted and only the fields of the application file will appear. The keyboard shortcut for the command to open the application is *Ctrl + a* or from the *File* menu, *Open*.
 
-##Criando novo campo
+##New field
 
-Para criar um novo campo para a correção, selecione o menu Campo, Novo, clique com o botão esquerdo do mouse por cima da imagem de fundo, selecionando o início do campo. Aparecerá um diálogo para configuração do campo. Nesse diálogo coloque a quantidade de células do campo (1 até 10), a direção do campo (horizontal ou vertical), o tipo do campo (caractere ou numeral), se o campo faz parte do identificador da folha de respostas, as dimensões de cada célula do campo em pixels e o espaçamento entre cada célula. Caso deseje desistir do processo, basta clicar no botão Cancelar. Para salvar o campo, clique em Ok. Após a seleção do campo será atualizada para as dimensões especificadas. Ao campo será atribuído um identificador que ficará próximo do campo.
+To create a new field for the correction, select the *Field* menu, *New*, click the left mouse button over the background image by selecting the beginning of the field. A dialog for the field configuration. In this dialog set the amount of the field cells (1 to 10), the field direction (horizontal or vertical), the field type (character or numeral), if the field is part of the answer sheet identifier, the dimensions of each cell of the field pixels and the spacing between each cell. If you want to quit the process by clicking the Cancel button. To save the field, click OK. After the selection of the field will be updated to the specified dimensions. To field an identifier that will be close to the field will be assigned.
 
-##Movendo campo
+##Moving a field
 
-Para selecionar um campo e movê-lo, utilize o botão central do mouse ou selecione o menu Campo, Mover e utilize o botão esquerdo. Clique sobre a linha limítrofe do campo, ela mudará pra a cor vermelha, indicando que foi selecionado. Após a seleção, pode-se  mantenha o botão central pressionado e mova o campo para outra área, ao soltar a operação estará finalizada.
+To select a field and move it, use the mouse middle button or select the *Field* menu , *Move* and use the left button. Click on the boundary line of the field, it will change to the color red, indicating it has been selected. After selection, you can hold the center button and move the field to another area, the release operation is finished.
 
-##Apagando campo
+##Delete a field
 
-Selecione o campo utilizando o botão central do mouse ou selecione o menu Campo, Mover e utilize o botão esquerdo. Depois de selecionado, apague o campo usando a tecla Delete.
+Select the field using the mouse middle button or select the *Field* menu, *Move* and use the left button. Once selected, delete the field using the *Delete* key.
 
-##Alterando campo
+##Changing a field
 
-Selecione o campo utilizando o clique com botão direito do mouse. A linha limítrofe do campo mudará para a cor azul, indicando que o campo foi selecionado. Altere as informações do campo da mesma forma que na operação de criação do campo. Caso deseje desistir do processo, basta clicar no botão Cancelar. Para salvar o campo, clique em Ok.
+Select the field using the right click of the mouse. The boundary line of the field will change to blue, indicating that the field is selected. Change the field information in the same way in the field setting operation. If you want to quit the process by clicking the *Cancel* button. To save the field, click *OK*.
