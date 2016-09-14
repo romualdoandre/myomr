@@ -5,6 +5,16 @@ An [Optical Mark Recognizer Software](https://en.wikipedia.org/wiki/Optical_mark
 
 This software has two parts: a GUI configurer and a CLI OMR.
 
+## Requirements:
+* Python 2.7.x
+* OpenCV 2.4.x
+* Numpy
+* PIL and ImageTk
+* Tix 
+
+## License:
+* [GPL V2](LICENSE)
+
 Preprocessing
 -----
 
@@ -16,14 +26,12 @@ First you might use scripts to ensure the image alignment. Enter the _/omr/src/c
 
 Where *x1* and *y1* is the beginning of the rightest superior mark, *x2* and *y2* is the beginning of the rightest inferior mark and *regex* is a regular expression refering the image files. All the result files will have a *rot_* prefix.
 
-After you might crop the image with the 
+After you might crop the image with the _/omr/src/cropped/crop.py_ script as follow:
 
-## Requirements:
-* Python 2.7.x
-* OpenCV 2.4.x
-* Numpy
-* PIL and ImageTk
-* Tix 
+> python crop.py x1 y1 x2 y2 regex
 
-## License:
-* [GPL V2](LICENSE)
+Where *x1* and *y1* is the beginning of the rightest superior mark, *x2* and *y2* is the beginning of the rightest inferior mark and *regex* is a regular expression refering the image files. All the result files will have a *crop_* prefix.
+
+GUI configurer tool
+-----
+
