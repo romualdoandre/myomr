@@ -267,7 +267,7 @@ class Configurer():
         filetypes=[('CSV files', '.csv'), ('All files', '*')]
         appfilename=tkFileDialog.askopenfilename( filetypes=filetypes)
         if appfilename!=None and appfilename!='':
-            appfile=open(appfilename, 'rb')
+            self.appfile=open(appfilename, 'rb')
             self.root.title("Jon 1.0 - "+appfilename)
             if self.canvas:
                 self.make_canvas()
