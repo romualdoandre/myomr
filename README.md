@@ -29,6 +29,7 @@ Where *x1* and *y1* is the beginning of the rightest superior mark, *x2* and *y2
 After you might crop the image with the _/omr/src/cropped/crop.py_ script as follow:
 
 > python crop.py x1 y1 x2 y2 regex
+<<<<<<< HEAD
 
 Where *x1* and *y1* is the beginning of the rightest superior mark, *x2* and *y2* is the beginning of the rightest inferior mark and *regex* is a regular expression refering the image files. All the result files will have a *crop_* prefix.
 
@@ -71,3 +72,11 @@ Selecione o campo utilizando o botão central do mouse ou selecione o menu Campo
 ##Alterando campo
 
 Selecione o campo utilizando o clique com botão direito do mouse. A linha limítrofe do campo mudará para a cor azul, indicando que o campo foi selecionado. Altere as informações do campo da mesma forma que na operação de criação do campo. Caso deseje desistir do processo, basta clicar no botão Cancelar. Para salvar o campo, clique em Ok.
+=======
+
+Where *x1* and *y1* is the beginning of the rightest superior mark, *x2* and *y2* is the beginning of the rightest inferior mark and *regex* is a regular expression refering the image files. All the result files will have a *crop_* prefix.
+
+GUI configurer tool
+-----
+
+>>>>>>> 24da86fe2b61465c3c8b6dc250b99584dfe88eda
