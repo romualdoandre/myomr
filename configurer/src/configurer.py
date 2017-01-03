@@ -279,7 +279,7 @@ class Configurer():
         Salva os campos selecionados em um arquivo .csv para utilização pelo Arya
         """
         if len(self.fields)<1:
-            tkMessageBox.showerror("Error", "Nenhum campo configurado")
+            tkMessageBox.showerror("Error", "No field selected")
             return
         filetypes=[('CSV files', '.csv'), ('All files', '*')]
         appfilename=tkFileDialog.asksaveasfilename(filetypes=filetypes)
@@ -352,51 +352,51 @@ class Configurer():
         @param space string: espaçamento entre células em pixels
         """
         self.top=Toplevel(self.root)
-        self.top.title('Configurar campo')
+        self.top.title('COnfigure field')
         self.top.protocol("WM_DELETE_WINDOW", self.cancel_field)
 
-        self.imidbox= Checkbutton(self.top,text="Identificador",variable=self.imidvar)
+        self.imidbox= Checkbutton(self.top,text="Identifier",variable=self.imidvar)
         self.imidbox.pack()
 
-        Label(self.top,text='Número de células:').pack()
+        Label(self.top,text='Number of cells:').pack()
         self.listnumber= Entry(self.top)
         self.listnumber.insert(0,num_cell)
         self.listnumber.pack()
 
-        Label(self.top,text='Direção:').pack()
+        Label(self.top,text='Direction:').pack()
         self.listdirection=  Tix.ComboBox(self.top,selectmode=SINGLE)
         self.listdirection.pack()
         self.listdirection.insert(END,'horizontal')
         self.listdirection.insert(END,'vertical')
         self.listdirection['value']=direction
 
-        Label(self.top,text='Tipo:').pack()
+        Label(self.top,text='Type:').pack()
         self.listtype= Tix.ComboBox(self.top,selectmode=SINGLE)
         self.listtype.pack()
         self.listtype.insert(END,'num')
         self.listtype.insert(END,'char')
         self.listtype['value']=type
 
-        Label(self.top,text='Largura da célula (px):').pack()
+        Label(self.top,text='Cell width (px):').pack()
         self.cellwidth=Entry(self.top)
         self.cellwidth.pack()
         self.cellwidth.insert(0,cellwidth)        
 
-        Label(self.top,text='Altura da célula (px):').pack()
+        Label(self.top,text='Cell height (px):').pack()
         self.cellheight=Entry(self.top)
         self.cellheight.pack()
         self.cellheight.insert(0,cellheight)
 
-        Label(self.top,text='Espaçamento (px):').pack()
+        Label(self.top,text='Spacing (px):').pack()
         self.space=Entry(self.top)
         self.space.pack()
         self.space.insert(0,space)
 
         Button(self.top,text="OK",command=self.save_field).pack()
         if num_cell==0:
-            Button(self.top,text="Cancelar",command=self.cancel_field).pack()
+            Button(self.top,text="Cancel",command=self.cancel_field).pack()
         else:
-            Button(self.top,text="Cancelar",command=self.top.destroy).pack()
+            Button(self.top,text="Cancel",command=self.top.destroy).pack()
 
 if __name__ == "__main__":
     conf=Configurer()
