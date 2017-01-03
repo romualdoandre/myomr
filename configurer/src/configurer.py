@@ -133,7 +133,7 @@ class Configurer():
         """
         Shows about dialog
         """
-        tkMessageBox.showinfo("About", "Configurer 1.0\nLicenciado sobre a GPL v3")
+        tkMessageBox.showinfo("About", "Configurer 1.0\nThis program is free software under GNU GPL 3 license")
 
     def select(self,event):
         """ 
@@ -261,7 +261,7 @@ class Configurer():
         self.tag=0
         self.tags={}
         if not self.image:
-            tkMessageBox.showerror("Erro", "Nenhuma imagem de fundo carregada")
+            tkMessageBox.showerror("Error", "No brackground image")
             return
         self.fields={}
         filetypes=[('CSV files', '.csv'), ('All files', '*')]
@@ -279,7 +279,7 @@ class Configurer():
         Salva os campos selecionados em um arquivo .csv para utilização pelo Arya
         """
         if len(self.fields)<1:
-            tkMessageBox.showerror("Erro", "Nenhum campo configurado")
+            tkMessageBox.showerror("Error", "Nenhum campo configurado")
             return
         filetypes=[('CSV files', '.csv'), ('All files', '*')]
         appfilename=tkFileDialog.asksaveasfilename(filetypes=filetypes)
@@ -331,7 +331,7 @@ class Configurer():
             print type(inst)     # the exception instance
             print inst.args      # arguments stored in .args
             print inst
-            tkMessageBox.showerror("Erro", "Por favor, forneça dados válidos")
+            tkMessageBox.showerror("Error", "Please, give valid data")
 
     def update_item(self,event):
         """
