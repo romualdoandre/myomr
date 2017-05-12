@@ -165,3 +165,341 @@ INFO:core:O valor do hist: 1626,hist2: 494, tag: 1.i: 7
 INFO:core:O valor do hist: 1626,hist2: 494, tag: 1.i: 8 
 INFO:core:O valor do hist: 1626,hist2: 494, tag: 1.i: 9 
 INFO:core:Termino de processamento:Wed Sep 14 15:49:00 2016
+INFO:core:Arquivo de saÃ­da:output.dat
+INFO:core:Arquivo de aplicaÃ§Ã£o:test.csv
+INFO:core:Arquivo de saÃ­da:output.dat
+INFO:core:Arquivo de aplicaÃ§Ã£o:test.csv
+INFO:core:Iniciando processamento:Fri May 12 10:10:55 2017
+INFO:core:Processando arquivo:test/crop_rot_answer.png
+INFO:core:PrÃ©-Processando arquivo:test/crop_rot_answer.png
+INFO:core:black/area: [ 0.54320985]
+INFO:core:black/area: [ 0.24074075]
+INFO:core:black/area: [ 0.2962963]
+INFO:core:black/area: [ 0.28472221]
+INFO:core:black/area: [ 0.28317901]
+INFO:core:black/area: [ 0.25848764]
+INFO:core:black/area: [ 0.24691358]
+INFO:core:black/area: [ 0.19521604]
+INFO:core:black/area: [ 0.23533951]
+INFO:core:black/area: [ 0.25]
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 0 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 1 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 2 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 3 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 4 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 5 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 6 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 7 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 8 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 9 
+WARNING:core:O arquivo test/crop_rot_answer.png possui marcacoes duplicadas no campo 0.duplicate: 10
+INFO:core:black/area: [ 0.63117284]
+INFO:core:black/area: [ 0.24537037]
+INFO:core:black/area: [ 0.29012346]
+INFO:core:black/area: [ 0.27777779]
+INFO:core:black/area: [ 0.26466051]
+INFO:core:black/area: [ 0.25077161]
+INFO:core:black/area: [ 0.23148148]
+INFO:core:black/area: [ 0.19444445]
+INFO:core:black/area: [ 0.24459876]
+INFO:core:black/area: [ 0.24691358]
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 0 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 1 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 2 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 3 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 4 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 5 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 6 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 7 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 8 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 9 
+WARNING:core:O arquivo test/crop_rot_answer.png possui marcacoes duplicadas no campo 1.duplicate: 10
+INFO:core:arquivo existente: test/**crop_rot_answer.png
+INFO:core:Termino de processamento:Fri May 12 10:10:55 2017
+INFO:core:Arquivo de saÃ­da:output.dat
+INFO:core:Arquivo de aplicaÃ§Ã£o:test.csv
+INFO:core:Iniciando processamento:Fri May 12 10:16:21 2017
+INFO:core:Processando arquivo:test/answer.png
+INFO:core:Pré-Processando arquivo:test/answer.png
+INFO:core:Arquivo de saÃ­da:output.dat
+INFO:core:Arquivo de aplicaÃ§Ã£o:test.csv
+INFO:core:Iniciando processamento:Fri May 12 10:17:02 2017
+INFO:core:Processando arquivo:test/crop_rot_answer.png
+INFO:core:Pré-Processando arquivo:test/crop_rot_answer.png
+INFO:core:Arquivo de saÃ­da:output.dat
+INFO:core:Arquivo de aplicaÃ§Ã£o:test.csv
+INFO:core:Iniciando processamento:Fri May 12 10:19:04 2017
+INFO:core:Processando arquivo:test/crop_rot_answer.png
+INFO:core:Pré-Processando arquivo:test/crop_rot_answer.png
+INFO:core:black/area: [ 0.54320985]
+INFO:core:black/area: [ 0.24074075]
+INFO:core:black/area: [ 0.2962963]
+INFO:core:black/area: [ 0.28472221]
+INFO:core:black/area: [ 0.28317901]
+INFO:core:black/area: [ 0.25848764]
+INFO:core:black/area: [ 0.24691358]
+INFO:core:black/area: [ 0.19521604]
+INFO:core:black/area: [ 0.23533951]
+INFO:core:black/area: [ 0.25]
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 0 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 1 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 2 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 3 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 4 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 5 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 6 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 7 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 8 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 9 
+WARNING:core:O arquivo test/crop_rot_answer.png possui marcacoes duplicadas no campo 0.duplicate: 10
+INFO:core:black/area: [ 0.63117284]
+INFO:core:black/area: [ 0.24537037]
+INFO:core:black/area: [ 0.29012346]
+INFO:core:black/area: [ 0.27777779]
+INFO:core:black/area: [ 0.26466051]
+INFO:core:black/area: [ 0.25077161]
+INFO:core:black/area: [ 0.23148148]
+INFO:core:black/area: [ 0.19444445]
+INFO:core:black/area: [ 0.24459876]
+INFO:core:black/area: [ 0.24691358]
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 0 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 1 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 2 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 3 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 4 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 5 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 6 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 7 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 8 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 9 
+WARNING:core:O arquivo test/crop_rot_answer.png possui marcacoes duplicadas no campo 1.duplicate: 10
+INFO:core:arquivo existente: test/**crop_rot_answer.png
+INFO:core:Termino de processamento:Fri May 12 10:19:04 2017
+INFO:core:Arquivo de saÃ­da:output.dat
+INFO:core:Arquivo de aplicaÃ§Ã£o:test.csv
+INFO:core:Iniciando processamento:Fri May 12 10:21:10 2017
+INFO:core:Processando arquivo:test/answer.png
+INFO:core:Pré-Processando arquivo:test/answer.png
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 0 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 1 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 2 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 3 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 4 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 5 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 6 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 7 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 8 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 9 
+WARNING:core:O arquivo test/answer.png sem marcacoes no campo 0.duplicate: 0
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 0 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 1 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 2 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 3 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 4 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 5 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 6 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 7 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 8 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 9 
+WARNING:core:O arquivo test/answer.png sem marcacoes no campo 1.duplicate: 0
+INFO:core:Termino de processamento:Fri May 12 10:21:10 2017
+INFO:core:Arquivo de saÃ­da:output.dat
+INFO:core:Arquivo de aplicaÃ§Ã£o:test.csv
+INFO:core:Iniciando processamento:Fri May 12 10:28:48 2017
+INFO:core:Processando arquivo:test/crop_rot_answer.png
+INFO:core:Pré-Processando arquivo:test/crop_rot_answer.png
+INFO:core:black/area: [ 0.35493827]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 0 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 1 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 2 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 3 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 4 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 5 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 6 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 7 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 8 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 9 
+INFO:core:black/area: [ 0.46373457]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 0 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 1 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 2 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 3 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 4 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 5 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 6 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 7 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 8 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 9 
+INFO:core:Termino de processamento:Fri May 12 10:28:48 2017
+INFO:core:Arquivo de saÃ­da:output.dat
+INFO:core:Arquivo de aplicaÃ§Ã£o:test.csv
+INFO:core:Iniciando processamento:Fri May 12 10:33:21 2017
+INFO:core:Processando arquivo:test/crop_rot_answer.png
+INFO:core:Pré-Processando arquivo:test/crop_rot_answer.png
+INFO:core:black/area: [ 0.35493827]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 0 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 1 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 2 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 3 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 4 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 5 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 6 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 7 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 8 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 9 
+INFO:core:black/area: [ 0.46373457]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 0 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 1 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 2 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 3 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 4 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 5 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 6 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 7 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 8 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 9 
+INFO:core:Processando arquivo:test/crop_rot_rot_answer.png
+INFO:core:Pré-Processando arquivo:test/crop_rot_rot_answer.png
+INFO:core:black/area: [ 0.35648149]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 0 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 1 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 2 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 3 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 4 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 5 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 6 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 7 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 8 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 9 
+INFO:core:black/area: [ 0.46373457]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 0 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 1 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 2 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 3 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 4 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 5 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 6 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 7 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 8 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 9 
+INFO:core:Termino de processamento:Fri May 12 10:33:21 2017
+INFO:core:Arquivo de saÃ­da:output.dat
+INFO:core:Arquivo de aplicaÃ§Ã£o:test.csv
+INFO:core:Iniciando processamento:Fri May 12 10:33:44 2017
+INFO:core:Processando arquivo:test/crop_rot_answer.png
+INFO:core:Pré-Processando arquivo:test/crop_rot_answer.png
+INFO:core:black/area: [ 0.35493827]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 0 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 1 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 2 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 3 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 4 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 5 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 6 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 7 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 8 
+INFO:core:O valor do hist: 1615,hist2: 510, tag: 0.i: 9 
+INFO:core:black/area: [ 0.46373457]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:black/area: [ 0.]
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 0 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 1 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 2 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 3 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 4 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 5 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 6 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 7 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 8 
+INFO:core:O valor do hist: 1715,hist2: 509, tag: 1.i: 9 
+INFO:core:Termino de processamento:Fri May 12 10:33:44 2017

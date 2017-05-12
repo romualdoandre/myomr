@@ -23,7 +23,7 @@ if __name__ == '__main__':
         #squares = find_squares(img)
         imgray = cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)
         retval, bin = cv2.threshold(imgray, threshold, 255, cv2.THRESH_BINARY)
-        contours, hierarchy = cv2.findContours(bin, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+        _, contours, _ = cv2.findContours(bin, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
         
         #cnt=sorted(contours,key= lambda cnt: cv2.contourArea(cnt))
         #minrect=cv2.minAreaRect(cnt[0])
@@ -58,11 +58,10 @@ if __name__ == '__main__':
         #cv2.rectangle(img,(x1,y1),(x2,y2),(0,0,255),10)
         #src=img[p1[0]:][p1[1]:]
         #cv2.imshow('squares', img2)
-        img3=img[:y2,:x2]
-        #cv2.imshow('squares2', img3)
+        img3=img[y2:,x2:]
         imgray = cv2.cvtColor(img3,cv2.COLOR_BGR2GRAY)
         retval, bin = cv2.threshold(imgray, threshold, 255, cv2.THRESH_BINARY)
-        contours, hierarchy = cv2.findContours(bin, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+        _, contours, _ = cv2.findContours(bin, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
         #cv2.drawContours( img3, contours, -1, (0, 255, 200), 2 )
         max_area2=0
         max_rect2=0
@@ -83,8 +82,20 @@ if __name__ == '__main__':
             #cv2.ellipse(img,max_rect,(0, 255, 0),4)
             #cv2.circle(img,max_rect[0],(0,255,0),3)
             #img=img[pts[1]:]
-            img=img[max_rect[0][1]:,max_rect2[0][0]:x+max_rect[0][0]]
-            cv2.imwrite('crop_'+fn,img,(cv2.IMWRITE_JPEG_QUALITY,100))
+            print int(max_rect[0][1])
+            print int(max_rect2[0][0])
+            print int(x+max_rect[0][0])
+            print img.shape
+            img=img[int(max_rect[0][1]):,int(max_rect[0][0]):int(x2+max_rect2[0][0])]
+            fn=fn.replace('\\','/')
+            fn=fn.encode('ascii','ignore')
+            nameparts=fn.split('.')
+            extension=nameparts[1]
+            nameandpath=nameparts[0].split('/')
+            nameandpath[-1]='crop_'+nameandpath[-1]+'.'+extension
+            destname='/'.join(nameandpath)
+            print destname
+            cv2.imwrite(destname,img,(cv2.IMWRITE_JPEG_QUALITY,100))
         else:
 			print 'marcas de referencia nao encontradas'
         #cv2.imshow('squares', img2)            

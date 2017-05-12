@@ -76,17 +76,17 @@ if __name__ == '__main__':
                     max_rect2=rect
                     
         if max_rect and max_rect2:
-			print max_area
-			print max_rect
-			print max_rect2
-			#pts=max_rect[0]
-			#cv2.ellipse(img,max_rect,(0, 255, 0),4)
-			#cv2.circle(img,max_rect[0],(0,255,0),3)
-			#img=img[pts[1]:]
-			img=img[max_rect[0][1]:,max_rect2[0][0]:x+max_rect[0][0]]
-			cv2.imwrite('crop_'+fn,img,(cv2.IMWRITE_JPEG_QUALITY,100))
+            print max_area
+            print max_rect
+            print max_rect2
+            #pts=max_rect[0]
+            #cv2.ellipse(img,max_rect,(0, 255, 0),4)
+            #cv2.circle(img,max_rect[0],(0,255,0),3)
+            #img=img[pts[1]:]
+            img=img[max_rect[0][1]:,max_rect2[0][0]:x+max_rect[0][0]]
+            cv2.imwrite('crop_'+fn,img,(cv2.IMWRITE_JPEG_QUALITY,100))
         else:
-			print 'marcas de referencia nao encontradas'
+            print 'marcas de referencia nao encontradas'
         #cv2.imshow('squares', img2)            
         
         '''ch = 0xFF & cv2.waitKey()

@@ -74,7 +74,7 @@ class Core:
         ranges = [0, 256 ] #variedade de valores analisados
                 
         gray = cv2.imread(filename,0)
-        if gray == None:
+        if gray is None:
             print( "Falha ao carregar %s" % filename)
             self.logger.error("Falha ao carregar %s" % filename)
             return False
@@ -225,9 +225,9 @@ class Core:
         @param filename : caminho completo do arquivo da imagem
         @param threshold : limiar para filtragem da imagem
         '''
-        self.logger.info('PrÃ©-Processando arquivo:'+filename)
+        self.logger.info('Pré-Processando arquivo:'+filename)
         im = cv2.imread(filename ,0)
-        if im == None:
+        if im is None:
             print "Failed to load %s" % filename
             sys.exit(-1)
             

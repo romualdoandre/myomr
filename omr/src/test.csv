@@ -1,0 +1,3 @@
+x,y,width,height,num_cell,type,direction,tag,imid,space
+1615.0,510.0,36,36,10,num,vertical,0,1,12
+1715.0,509.0,36,36,10,num,vertical,1,1,12
