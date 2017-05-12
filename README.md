@@ -75,6 +75,8 @@ Processing
 -----
 
 After angle correction and image cropping, processing can occur using the command line in the following format:
+
 > python omr.py -i regex -o output -a config.csv
+
 Where *regex* is a regular expression refering the image files already corrected for processing. *Output* is the file where the responses of each sheet will be saved, one in each row. *Config.csv* is the configuration file generated in __Configurer__. The processed images will be renamed according to the identifier determined in the configuration.
 **Attention: Each field is processed in the order in which it appears in the configuration file.**
