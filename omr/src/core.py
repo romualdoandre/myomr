@@ -9,12 +9,13 @@ import datetime
 #import cv2.cv as cv
 import cv2
 import numpy as np
+import subprocess as sp
 
 class Core:
     '''
     MÃ³dulo de processamento de imagens
     '''
-    def __init__(self,filenames=[],appfilename=None,datafilename=None,threshold=95):
+    def __init__(self,filenames=[],appfilename=None,datafilename=None,threshold=95,zbar=False):
         '''
         Construtor do mÃ³dulo
         @param filenames : arquivos para processamento
@@ -34,6 +35,8 @@ class Core:
         self.croppedindex=0
         self.logger.info('Arquivo de saÃ­da:'+datafilename)
         self.logger.info('Arquivo de aplicaÃ§Ã£o:'+appfilename)
+        self.use_zbar=zbar
+        self.zbar=['C:\\Program Files (x86)\\ZBar\\bin\\zbarimg','-q','']
         if datafilename!=None:
             self.datafile=open(datafilename,'w')
         if appfilename!=None:
@@ -69,6 +72,11 @@ class Core:
         @param filename : nome do arquivo contendo a imagem
         '''
         self.logger.info('Processando arquivo:'+filename)
+        if self.use_zbar:
+            self.id=self.read_barcode(filename)
+            self.datafile.write(self.id)
+        else:
+            self.id=''
         self.pre_process_image(filename, self.threshold)
         hist_size = 64 #tamanho do histograma
         ranges = [0, 256 ] #variedade de valores analisados
@@ -82,7 +90,8 @@ class Core:
         nameparts=filename.split('.')
         extension=nameparts[1]
         nameandpath=nameparts[0].split('/')
-        self.id=''
+        
+        
         for row in self.conf:
             self.process_row(gray,row,hist_size,ranges,nameandpath,filename)
         
@@ -233,3 +242,8 @@ class Core:
             
         retval, im = cv2.threshold(im, threshold, 255, cv2.THRESH_BINARY)
         cv2.imwrite(filename, im)
+        
+    def read_barcode(self,filename):
+        self.zbar[-1]=filename
+        code=sp.check_output(self.zbar)
+        return code.split(':')[1][:-2]

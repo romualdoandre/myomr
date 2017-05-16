@@ -20,16 +20,17 @@ class Omr:
         self.datafilepath=options.datafilepath
         self.inputfolder=options.inputfolder
         self.threshold=options.threshold
+        self.zbar=options.zbar
     
     def scan(self):
         '''
         Starts the processing. Supported image formats: all supported by OpenCV and PIL
         '''
         if self.inputfolder!=None and self.appfilepath!=None and self.datafilepath!=None:
-            self.core=Core(glob.glob(self.inputfolder),self.appfilepath,self.datafilepath,self.threshold)
+            self.core=Core(glob.glob(self.inputfolder),self.appfilepath,self.datafilepath,self.threshold,self.zbar)
             self.core.run()
         else:
-            print("Por favor, forneça a pasta de entrada, o arquivo de aplicação e o arquivo de dados")
+            print "usage: python omr.py -i regex -o output -a config -t threshold [-z]"
 
 if __name__ == "__main__":
     usage = "usage: %prog [options]"
@@ -38,6 +39,7 @@ if __name__ == "__main__":
     parser.add_option("-o", "--output",action="store", type="string", dest="datafilepath",help='output file with sheets data')
     parser.add_option("-a", "--app",action="store", type="string", dest="appfilepath",help='file with sheet fields')
     parser.add_option("-t", "--threshold",action="store", type="int", dest="threshold",help='threshold value')
+    parser.add_option("-z","--zbar", action="store_true", dest="zbar", default=False ,help='use zbar on Windows')
     (options, args)= parser.parse_args(argv)
     program=Omr(options)
     program.scan()
