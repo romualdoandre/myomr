@@ -76,8 +76,8 @@ Processing
 
 After angle correction and image cropping, processing can occur using the command line in the following format:
 
-> python omr.py -i regex -o output -a config.csv
+> python omr.py -i regex -o output -a config.csv -t threshold [-z]
 
-Where *regex* is a regular expression refering the image files already corrected for processing. *Output* is the file where the responses of each sheet will be saved, one in each row. *Config.csv* is the configuration file generated in __Configurer__. The processed images will be renamed according to the identifier determined in the configuration.
+Where *regex* is a regular expression refering the image files already corrected for processing. *Output* is the file where the responses of each sheet will be saved, one in each row. *Config.csv* is the configuration file generated in __Configurer__. *Threshold* is a integer value of the threshold applied to the image file. The optional *-z* option makes the OMR to use ZBar Barcode Reader program to read the identifier from a barcode in the image file. This option is used only on Windows OS. The processed images will be renamed according to the identifier determined in the configuration.
 
 **Attention: Each field is processed in the order in which it appears in the configuration file.**
